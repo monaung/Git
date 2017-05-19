@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
+using System.Linq.Expressions;
 
 namespace DynamicLambdaExpression
 {
@@ -7,7 +9,27 @@ namespace DynamicLambdaExpression
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            List<Person> _person = DataSet();
+
+            var parmExpression = Expression.Parameter(Type.GetType("DynamicLambdaExpression.Person"),"person"); //"person" = (person => person.XXX);
+
+            var constant = Expression.Constant("Mon"); // value
+
+            var property = Expression.Property(parmExpression, "FirstName");
+
+            var expression = Expression.Equal(property, constant); // (persion.FirstName="Mon")
+
+            var lambda = Expression.Lambda<Func<Person, bool>>(expression, parmExpression);
+
+            var compiledLambda = lambda.Compile();
+
+            var result = _person.Where(compiledLambda).ToList();
+
+            foreach (var item in result)
+            {
+                Console.WriteLine(item.FirstName);
+            }
+
         }
 
 
