@@ -21,7 +21,18 @@ namespace DynamicLambdaExpression
                     , FirstName="Mon"
                     , LastName="Aung"
                                     });
-            
+
+            _people.Add(new Person()
+            {
+                Address = new Address()
+                { City = "Yangon", Number = "39", State = "N Dagon", Street = "St 10", ZipCode = "350786" }
+    ,
+                Age = 34
+        ,
+                FirstName = "Zeya"
+        ,
+                LastName = "Thu"
+            });
 
             return _people;
         }
