@@ -1,0 +1,15 @@
+﻿<Properties StartupConfiguration="{84F50CA9-271C-46F6-A4FE-279F9A635783}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="DynamicLambdaExpression/Address.cs">
+    <Files>
+      <File FileName="DynamicLambdaExpression/Program.cs" Line="18" Column="117" />
+      <File FileName="DynamicLambdaExpression/Address.cs" Line="16" Column="29" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.DynamicLambdaExpression PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+</Properties>

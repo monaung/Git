@@ -1,0 +1,5 @@
+/Users/MONAUNG/code/CodeMag/DynamicLambdaExpression/DynamicLambdaExpression/bin/Debug/DynamicLambdaExpression.exe
+/Users/MONAUNG/code/CodeMag/DynamicLambdaExpression/DynamicLambdaExpression/bin/Debug/DynamicLambdaExpression.pdb
+/Users/MONAUNG/code/CodeMag/DynamicLambdaExpression/DynamicLambdaExpression/obj/x86/Debug/DynamicLambdaExpression.csproj.CoreCompileInputs.cache
+/Users/MONAUNG/code/CodeMag/DynamicLambdaExpression/DynamicLambdaExpression/obj/x86/Debug/DynamicLambdaExpression.exe
+/Users/MONAUNG/code/CodeMag/DynamicLambdaExpression/DynamicLambdaExpression/obj/x86/Debug/DynamicLambdaExpression.pdb
