@@ -11,7 +11,7 @@ namespace DynamicLambdaExpression
         {
             List<Person> _person = DataSet();
 
-            var parmExpression = Expression.Parameter(Type.GetType("DynamicLambdaExpression.Person"),"person"); //"person" = (person => person.XXX);
+            var parmExpression = Expression.Parameter(Type.GetType("DynamicLambdaExpression.Person"), "person"); //"person" = (person => person.XXX);
 
             var constant = Expression.Constant("Mon"); // value
 
@@ -37,22 +37,32 @@ namespace DynamicLambdaExpression
         {
             List<Person> _people = new List<Person>();
 
-            _people.Add(new Person(){ Address =new Address()
-                                            { City="Singapore", Number="127", State="Bishan", Street="St 12" , ZipCode="570127"} 
-                , Age= 34
-                    , FirstName="Mon"
-                    , LastName="Aung"
-                                    });
+            _people.Add(new Person()
+            {
+                Address = new Address()
+                {
+                    City = "Singapore",
+                    Number = "127",
+                    State = "Bishan",
+                    Street = "St 12",
+                    ZipCode = "570127"
+                }
+                    ,
+                Age = 34
+                    ,
+                FirstName = "Mon"
+                    ,
+                LastName = "Aung"
+            });
 
             _people.Add(new Person()
             {
                 Address = new Address()
-                { City = "Yangon", Number = "39", State = "N Dagon", Street = "St 10", ZipCode = "350786" }
-    ,
+                ,
                 Age = 34
-        ,
+                ,
                 FirstName = "Zeya"
-        ,
+                ,
                 LastName = "Thu"
             });
 
@@ -60,12 +70,18 @@ namespace DynamicLambdaExpression
             _people.Add(new Person()
             {
                 Address = new Address()
-                { City = "Yangon", Number = "39", State = "N Dagon", Street = "St 10", ZipCode = "350786" }
-,
+                {
+                    City = "Yangon",
+                    Number = "39",
+                    State = "N Dagon",
+                    Street = "St 10",
+                    ZipCode = "350786"
+                }
+                ,
                 Age = 34
-   ,
+                ,
                 FirstName = "Zeya"
-   ,
+                ,
                 LastName = "Thu"
             });
 
